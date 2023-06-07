@@ -1,0 +1,28 @@
+button {
+    display: flex;
+    justify-content: center;
+    width: 75px;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+button:hover {
+    outline: 10px auto black;
+}
+
+.active {
+    color: white;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+}
+
+.active:focus {
+    outline: 4px auto -webkit-focus-ring-color;
+}

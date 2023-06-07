@@ -1,19 +1,18 @@
 import { useState } from 'react'
 import './App.css'
-import { SizeSelector } from './components/sizeSelector';
+import { ColorSelector } from './components/ColorSelector';
 
 export function App() {
-  const [currentSize, setCurrentSize] = useState("none");
+  const [currentColor, setCurrentColor] = useState("red");
 
   return (
     <div>
-      <h1>Selected Size: {currentSize}</h1>
-      <SizeSelector
-        selectedSize={currentSize}
-        onSizeChange={(size) => setCurrentSize(size)}
+      <h1 style={{ color: currentColor }}>Selected size: {currentColor}</h1>
+      <ColorSelector
+        selectedColor={currentColor}
+        onColorChange={(color) => setCurrentColor(color)} //(size) => setCurrentSize(size) === setCurrentSize   //true
       />
     </div>
   )
 }
-
 
