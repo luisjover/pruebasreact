@@ -8,15 +8,15 @@ interface Props {
 }
 
 
-export const SizeSelector: FC<Props> = ({ selectedSize, onSizeChange }) => {
+export const SizeSelector: FC<Props> = (props) => {
     return (
         <div style={{ display: "flex", justifyContent: "center" }}>
             {
                 possibleSizes.map(size => (
                     <button
                         key={size}
-                        className={selectedSize === size ? "active" : ""}
-                        onClick={() => onSizeChange(size)}
+                        className={props.selectedSize === size ? "active" : ""}
+                        onClick={() => props.onSizeChange(size)}
                     >
                         {size}
                     </button>

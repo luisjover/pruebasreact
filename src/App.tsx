@@ -3,7 +3,7 @@ import './App.css'
 import { SizeSelector } from './components/sizeSelector';
 
 export function App() {
-  const [currentSize, setCurrentSize] = useState("none");
+  const [currentSize, setCurrentSize] = useState("");
 
   return (
     <div>
