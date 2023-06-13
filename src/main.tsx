@@ -1,18 +1,12 @@
-import React from 'react'
 import ReactDOM from 'react-dom/client'
-//import { App } from './App'
 import './index.css'
 import { MyFirstApp } from './firstApp'
 import { App } from './App'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import { SizeSelector } from './components/sizeSelector'
-// import { SecondApp } from './secondApp'
-import { Layout, Home } from './layout'
-
+import { Layout, Home } from './Layout'
 
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-
 
     <BrowserRouter>
         <Routes>
@@ -24,6 +18,5 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
             </Route>
         </Routes>
     </BrowserRouter>
-
 
 )
