@@ -1,11 +1,10 @@
-import React from 'react'
+
 import ReactDOM from 'react-dom/client'
 //import { App } from './App'
 import './index.css'
 import { MyFirstApp } from './firstApp'
 import { App } from './App'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import { SizeSelector } from './components/sizeSelector'
 // import { SecondApp } from './secondApp'
 import { Layout, Home } from './layout'
 
