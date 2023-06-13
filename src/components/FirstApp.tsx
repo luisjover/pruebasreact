@@ -1,6 +1,6 @@
 import './App.css'
 import { useState } from 'react'
-import { ColorSelector } from './components/ColorChanger';
+import { ColorSelector } from './ColorChanger';
 
 export const MyFirstApp = () => {
 

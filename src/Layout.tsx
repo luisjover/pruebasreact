@@ -11,6 +11,7 @@ export const Layout = () => {
                     <Link to="/">Home</Link>
                     <Link to="/sizeselector">SizedSelector</Link>
                     <Link to="/colorchanger">ColorChanger</Link>
+                    <Link to="/users">Users</Link>
                 </nav>
             </header>
             <section>

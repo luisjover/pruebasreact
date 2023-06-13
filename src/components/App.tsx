@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import { SizeSelector } from './components/sizeSelector';
+import { SizeSelector } from './SizeSelector';
 
 export function App() {
   const initialColor: string = "black"
