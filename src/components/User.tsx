@@ -1,4 +1,4 @@
-import { useParams, Navigate, Link } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { getUser } from "../assets/db/users";
 
 
