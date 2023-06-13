@@ -1,16 +1,14 @@
 import { useParams } from "react-router-dom"
 import { getUser } from "../assets/db/users";
 
-
 export const User = () => {
     const params = useParams();
-
 
 
     const userId: string | undefined = params.userId;
     if (userId === undefined) return;
     const user = getUser(parseInt(userId))
-    if (user === undefined) return;
+    if (user === undefined) return <div>User not found</div>;
 
 
     return (
@@ -27,8 +25,5 @@ export const User = () => {
                 <p>{user.phone}</p>
             </div>
         </>
-
-
-
     )
 }

@@ -26,3 +26,18 @@ button {
   -ms-transition: all .3s ease-out;
   -o-transition: all .3s ease-out;
 }
+
+.users-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+ul {
+  list-style: none;
+  text-align: justify;
+}
+
+.nav-active:active {
+  color: red;
+  text-decoration: underline;
+}

@@ -19,9 +19,10 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
                 <Route index element={<Home />} />
                 <Route path="sizeselector" element={<App />} />
                 <Route path="colorchanger" element={<MyFirstApp />} />
-                {/* <Route path="*" element={<Navigate replace to="/" />} /> */}
-                <Route path="users" element={<Users />} />
-                <Route path="users/:userId" element={<User />} />
+                <Route path="users" element={<Users />} >
+                    <Route index element={<div>Select an User</div>} />
+                    <Route path=":userId" element={<User />} />
+                </Route>
             </Route>
         </Routes>
     </BrowserRouter>
