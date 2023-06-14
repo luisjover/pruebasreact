@@ -1,15 +1,20 @@
-import { useParams } from "react-router-dom"
-import { getUser } from "../assets/db/users";
+import {useNavigate, useParams, } from "react-router-dom"
+import { deleteUser, getUser } from "../assets/db/users";
 
 export const User = () => {
     const params = useParams();
-
+    const navigate = useNavigate();
 
     const userId: string | undefined = params.userId;
     if (userId === undefined) return;
     const user = getUser(parseInt(userId))
     if (user === undefined) return <div>User not found</div>;
 
+    const handleDelete = () =>{
+        deleteUser(parseInt(userId));
+        navigate("/users");
+                
+    }
 
     return (
         <>
@@ -24,6 +29,7 @@ export const User = () => {
             <div>
                 <p>{user.phone}</p>
             </div>
+            <button className="delte-button" onClick={handleDelete}>Delete</button>
         </>
     )
 }
